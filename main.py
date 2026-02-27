@@ -15,7 +15,8 @@ def register_user():
 def views_users():
     users = User.get_users()
     for user in users:
-        print(f"ID: {user.id}, Nombre: {user.name}, CURP: {user.curp}, Cuenta: {user.account}, Contraseña: {user.password}")
+        print (f"------------------------------")
+        print(f"Nombre: {user.name}, CURP: {user.curp}, Cuenta: {user.account}, Contraseña: {user.password}")
 
 def login():
     account = input("Cuenta: ")

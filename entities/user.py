@@ -53,7 +53,7 @@ class User:
                 name = row["name"],
                 account = row["account"],
                 curp = decrypt(row["curp"]),
-                password = row["password"]
+                password = decrypt(row["password"])
                  )
                 
             for row in rows
